@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4D3987D5-9AC7-4B37-B625-0D31B92B959A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FutureProofing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>91555DBC133315456E6D6EEAA4FC80CC29E47408</key>
+		<string>https://github.com/Thomvis/FutureProofing.git</string>
+		<key>93608FFF008CD82ADDFA850BB9C1630FA754586F</key>
+		<string>https://github.com/Thomvis/BrightFutures.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FutureProofing.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>91555DBC133315456E6D6EEAA4FC80CC29E47408</key>
+		<string>../..</string>
+		<key>93608FFF008CD82ADDFA850BB9C1630FA754586F</key>
+		<string>../..BrightFutures</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Thomvis/FutureProofing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>91555DBC133315456E6D6EEAA4FC80CC29E47408</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>91555DBC133315456E6D6EEAA4FC80CC29E47408</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FutureProofing</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>93608FFF008CD82ADDFA850BB9C1630FA754586F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FutureProofingBrightFutures</string>
+		</dict>
+	</array>
+</dict>
+</plist>

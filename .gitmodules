@@ -1,0 +1,3 @@
+[submodule "BrightFutures"]
+	path = BrightFutures
+	url = https://github.com/Thomvis/BrightFutures.git
