@@ -1,7 +1,7 @@
 # FutureProofing
 A companion library to BrightFutures with extensions to CocoaTouch that provides a Future-based alternative to asynchronous API's.
 
-The goal for this library is to become a community driven, best practice helper framework that most users of BrightFutures include when using the core library.
+The goal for this library is to become a community driven, best practice, helper-framework that most users of BrightFutures include when using the core library.
 
 ## Extensions
 
