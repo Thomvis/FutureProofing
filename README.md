@@ -16,10 +16,10 @@ UIView.animateWithDuration(0.5) {
 
 ### NSURLSession
 ```swift
-let (task, res) = session.dataTaskWithURL(NSURL(string: "http://www.example.org")!)
+let (task, f) = session.dataTaskWithURL(NSURL(string: "http://www.example.org")!)
 task.resume()
 
-res.onSuccess { (data, response) in
+f.onSuccess { (data, response) in
   // do something with the response
 }.onFailure { error in 
   // handle error
