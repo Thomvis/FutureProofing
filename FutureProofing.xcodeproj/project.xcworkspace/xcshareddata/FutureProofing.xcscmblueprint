@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "91555DBC133315456E6D6EEAA4FC80CC29E47408",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "93608FFF008CD82ADDFA850BB9C1630FA754586F" : 0,
+    "91555DBC133315456E6D6EEAA4FC80CC29E47408" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4D3987D5-9AC7-4B37-B625-0D31B92B959A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "93608FFF008CD82ADDFA850BB9C1630FA754586F" : "FutureProofingBrightFutures",
+    "91555DBC133315456E6D6EEAA4FC80CC29E47408" : "FutureProofing"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FutureProofing",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FutureProofing.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Thomvis\/FutureProofing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "91555DBC133315456E6D6EEAA4FC80CC29E47408"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Thomvis\/BrightFutures.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93608FFF008CD82ADDFA850BB9C1630FA754586F"
+    }
+  ]
+}

@@ -1,3 +1,6 @@
-[submodule "BrightFutures"]
-	path = BrightFutures
+[submodule "Carthage/Checkouts/BrightFutures"]
+	path = Carthage/Checkouts/BrightFutures
 	url = https://github.com/Thomvis/BrightFutures.git
+[submodule "Carthage/Checkouts/Result"]
+	path = Carthage/Checkouts/Result
+	url = https://github.com/antitypical/Result.git
