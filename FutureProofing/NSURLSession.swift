@@ -11,16 +11,16 @@ import BrightFutures
 
 extension NSURLSession {
     
-    func dataTaskWithRequest(request: NSURLRequest) -> (NSURLSessionDataTask, Future<(NSData!, NSURLResponse!), NSError>) {
-        let p = Promise<(NSData!, NSURLResponse!), NSError>()
+    func dataTaskWithRequest(request: NSURLRequest) -> (NSURLSessionDataTask, Future<(NSData?, NSURLResponse?), NSError>) {
+        let p = Promise<(NSData?, NSURLResponse?), NSError>()
         
         let task = self.dataTaskWithRequest(request, completionHandler: self.completionHandler(promise: p))
         
         return (task, p.future)
     }
     
-    func dataTaskWithURL(url: NSURL) -> (NSURLSessionDataTask, Future<(NSData!, NSURLResponse!), NSError>) {
-        let p = Promise<(NSData!, NSURLResponse!), NSError>()
+    func dataTaskWithURL(url: NSURL) -> (NSURLSessionDataTask, Future<(NSData?, NSURLResponse?), NSError>) {
+        let p = Promise<(NSData?, NSURLResponse?), NSError>()
         
         let task = self.dataTaskWithURL(url, completionHandler: self.completionHandler(promise: p))
         
@@ -28,8 +28,8 @@ extension NSURLSession {
     }
     
     
-    func uploadTaskWithRequest(request: NSURLRequest, fromFile fileURL: NSURL) -> (NSURLSessionUploadTask, Future<(NSData!, NSURLResponse!), NSError>) {
-        let p = Promise<(NSData!, NSURLResponse!), NSError>()
+    func uploadTaskWithRequest(request: NSURLRequest, fromFile fileURL: NSURL) -> (NSURLSessionUploadTask, Future<(NSData?, NSURLResponse?), NSError>) {
+        let p = Promise<(NSData?, NSURLResponse?), NSError>()
         
         let task = self.uploadTaskWithRequest(request, fromFile: fileURL, completionHandler: self.completionHandler(promise: p))
         
@@ -37,32 +37,32 @@ extension NSURLSession {
     }
     
     
-    func uploadTaskWithRequest(request: NSURLRequest, fromData bodyData: NSData?) -> (NSURLSessionUploadTask, Future<(NSData!, NSURLResponse!), NSError>) {
-        let p = Promise<(NSData!, NSURLResponse!), NSError>()
+    func uploadTaskWithRequest(request: NSURLRequest, fromData bodyData: NSData?) -> (NSURLSessionUploadTask, Future<(NSData?, NSURLResponse?), NSError>) {
+        let p = Promise<(NSData?, NSURLResponse?), NSError>()
         
         let task = self.uploadTaskWithRequest(request, fromData: bodyData, completionHandler: self.completionHandler(promise: p))
         
         return (task, p.future)
     }
     
-    func downloadTaskWithRequest(request: NSURLRequest) -> (NSURLSessionDownloadTask, Future<(NSURL!, NSURLResponse!), NSError>) {
-        let p = Promise<(NSURL!, NSURLResponse!), NSError>()
+    func downloadTaskWithRequest(request: NSURLRequest) -> (NSURLSessionDownloadTask, Future<(NSURL?, NSURLResponse?), NSError>) {
+        let p = Promise<(NSURL?, NSURLResponse?), NSError>()
         
         let task = self.downloadTaskWithRequest(request, completionHandler: self.downloadTaskCompletionHandler(promise: p))
         
         return (task, p.future)
     }
     
-    func downloadTaskWithURL(url: NSURL) -> (NSURLSessionDownloadTask, Future<(NSURL!, NSURLResponse!), NSError>) {
-        let p = Promise<(NSURL!, NSURLResponse!), NSError>()
+    func downloadTaskWithURL(url: NSURL) -> (NSURLSessionDownloadTask, Future<(NSURL?, NSURLResponse?), NSError>) {
+        let p = Promise<(NSURL?, NSURLResponse?), NSError>()
         
         let task = self.downloadTaskWithURL(url, completionHandler: self.downloadTaskCompletionHandler(promise: p))
         
         return (task, p.future)
     }
     
-    func downloadTaskWithResumeData(resumeData: NSData) -> (NSURLSessionDownloadTask, Future<(NSURL!, NSURLResponse!), NSError>) {
-        let p = Promise<(NSURL!, NSURLResponse!), NSError>()
+    func downloadTaskWithResumeData(resumeData: NSData) -> (NSURLSessionDownloadTask, Future<(NSURL?, NSURLResponse?), NSError>) {
+        let p = Promise<(NSURL?, NSURLResponse?), NSError>()
         
         let task = self.downloadTaskWithResumeData(resumeData, completionHandler: self.downloadTaskCompletionHandler(promise: p))
         
@@ -70,22 +70,22 @@ extension NSURLSession {
     }
     
     
-    func completionHandler(promise p: Promise<(NSData!, NSURLResponse!), NSError>) -> (NSData!, NSURLResponse!, NSError!) -> () {
+    func completionHandler(promise p: Promise<(NSData?, NSURLResponse?), NSError>) -> (NSData?, NSURLResponse?, NSError?) -> Void {
         return { (data, response, error) -> () in
-            if error != nil {
-                p.failure(error)
+            if let error = error {
+                try! p.failure(error)
             } else {
-                p.success(data, response)
+                try! p.success(data, response)
             }
         }
     }
     
-    func downloadTaskCompletionHandler(promise p: Promise<(NSURL!, NSURLResponse!), NSError>) -> (NSURL!, NSURLResponse!, NSError!) -> () {
+    func downloadTaskCompletionHandler(promise p: Promise<(NSURL?, NSURLResponse?), NSError>) -> (NSURL?, NSURLResponse?, NSError?) -> Void {
         return { (url, response, error) -> () in
-            if error != nil {
-                p.failure(error)
+            if let error = error {
+                try! p.failure(error)
             } else {
-                p.success(url, response)
+                try! p.success(url, response)
             }
         }
     }

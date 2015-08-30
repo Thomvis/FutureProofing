@@ -15,7 +15,7 @@ extension UIView {
         let p = Promise<Bool, NoError>()
         
         self.animateWithDuration(duration, delay: delay, options: options, animations: animations) { (finished) -> Void in
-            p.success(finished)
+            p.trySuccess(finished)
         }
         
         return p.future
@@ -25,7 +25,7 @@ extension UIView {
         let p = Promise<Bool, NoError>()
         
         self.animateWithDuration(duration, animations: animations) { (finished) -> Void in
-            p.success(finished)
+            p.trySuccess(finished)
         }
         
         return p.future
@@ -35,7 +35,7 @@ extension UIView {
         let p = Promise<Bool, NoError>()
         
         self.animateWithDuration(duration, delay: delay, usingSpringWithDamping: dampingRatio, initialSpringVelocity: velocity, options: options, animations: animations) { (finished) -> Void in
-            p.success(finished)
+            p.trySuccess(finished)
         }
         
         return p.future
@@ -45,7 +45,7 @@ extension UIView {
         let p = Promise<Bool, NoError>()
         
         self.transitionWithView(view, duration: duration, options: options, animations: animations) { (finished) -> Void in
-            p.success(finished)
+            p.trySuccess(finished)
         }
         
         return p.future
@@ -55,17 +55,17 @@ extension UIView {
         let p = Promise<Bool, NoError>()
         
         self.transitionFromView(fromView, toView: toView, duration: duration, options: options) { (finished) -> Void in
-            p.success(finished)
+            p.trySuccess(finished)
         }
         
         return p.future
     }
     
-    class func performSystemAnimation(animation: UISystemAnimation, onViews views: [AnyObject], options: UIViewAnimationOptions, animations parallelAnimations: (() -> Void)?) -> Future<Bool, NoError> {
+    class func performSystemAnimation(animation: UISystemAnimation, onViews views: [UIView], options: UIViewAnimationOptions, animations parallelAnimations: (() -> Void)?) -> Future<Bool, NoError> {
         let p = Promise<Bool, NoError>()
         
         self.performSystemAnimation(animation, onViews: views, options: options, animations: parallelAnimations) { (finished) -> Void in
-            p.success(finished)
+            p.trySuccess(finished)
         }
         
         return p.future
@@ -75,7 +75,7 @@ extension UIView {
         let p = Promise<Bool, NoError>()
         
         self.animateKeyframesWithDuration(duration, delay: delay, options: options, animations: animations) { (finished) -> Void in
-            p.success(finished)
+            p.trySuccess(finished)
         }
         
         return p.future
