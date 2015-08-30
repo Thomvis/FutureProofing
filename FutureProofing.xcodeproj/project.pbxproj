@@ -12,7 +12,8 @@
 		E9F189331A67942300F81E17 /* FutureProofing.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F189321A67942300F81E17 /* FutureProofing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9F189391A67942300F81E17 /* FutureProofing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F1892D1A67942300F81E17 /* FutureProofing.framework */; };
 		E9F189401A67942300F81E17 /* FutureProofingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1893F1A67942300F81E17 /* FutureProofingTests.swift */; };
-		E9F189571A67995D00F81E17 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F189541A67995700F81E17 /* BrightFutures.framework */; };
+		E9F69BAE1B933FCE00713A91 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F69BAD1B933FCE00713A91 /* BrightFutures.framework */; settings = {ASSET_TAGS = (); }; };
+		E9F69BB01B933FD200713A91 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F69BAF1B933FD200713A91 /* Result.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,20 +23,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = E9F1892C1A67942300F81E17;
 			remoteInfo = FutureProofing;
-		};
-		E9F189531A67995700F81E17 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F1894E1A67995700F81E17 /* BrightFutures.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9DF0815194470060083F7F2;
-			remoteInfo = BrightFutures;
-		};
-		E9F189551A67995700F81E17 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F1894E1A67995700F81E17 /* BrightFutures.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9DF0820194470060083F7F2;
-			remoteInfo = BrightFuturesTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,7 +35,8 @@
 		E9F189381A67942300F81E17 /* FutureProofingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FutureProofingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F1893E1A67942300F81E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F1893F1A67942300F81E17 /* FutureProofingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureProofingTests.swift; sourceTree = "<group>"; };
-		E9F1894E1A67995700F81E17 /* BrightFutures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrightFutures.xcodeproj; path = BrightFutures/BrightFutures.xcodeproj; sourceTree = "<group>"; };
+		E9F69BAD1B933FCE00713A91 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		E9F69BAF1B933FD200713A91 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9F189571A67995D00F81E17 /* BrightFutures.framework in Frameworks */,
+				E9F69BAE1B933FCE00713A91 /* BrightFutures.framework in Frameworks */,
+				E9F69BB01B933FD200713A91 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +72,7 @@
 		E9F189231A67942300F81E17 = {
 			isa = PBXGroup;
 			children = (
-				E9F1894E1A67995700F81E17 /* BrightFutures.xcodeproj */,
+				E9F69BAC1B933FC100713A91 /* Frameworks */,
 				E9F1892F1A67942300F81E17 /* FutureProofing */,
 				E9F1893C1A67942300F81E17 /* FutureProofingTests */,
 				E9F1892E1A67942300F81E17 /* Products */,
@@ -134,13 +123,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E9F1894F1A67995700F81E17 /* Products */ = {
+		E9F69BAC1B933FC100713A91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E9F189541A67995700F81E17 /* BrightFutures.framework */,
-				E9F189561A67995700F81E17 /* BrightFuturesTests.xctest */,
+				E9F69BAF1B933FD200713A91 /* Result.framework */,
+				E9F69BAD1B933FCE00713A91 /* BrightFutures.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +188,8 @@
 		E9F189241A67942300F81E17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Thomas Visser";
 				TargetAttributes = {
 					E9F1892C1A67942300F81E17 = {
@@ -220,12 +210,6 @@
 			mainGroup = E9F189231A67942300F81E17;
 			productRefGroup = E9F1892E1A67942300F81E17 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E9F1894F1A67995700F81E17 /* Products */;
-					ProjectRef = E9F1894E1A67995700F81E17 /* BrightFutures.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E9F1892C1A67942300F81E17 /* FutureProofing */,
@@ -233,23 +217,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E9F189541A67995700F81E17 /* BrightFutures.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = BrightFutures.framework;
-			remoteRef = E9F189531A67995700F81E17 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E9F189561A67995700F81E17 /* BrightFuturesTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = BrightFuturesTests.xctest;
-			remoteRef = E9F189551A67995700F81E17 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9F1892B1A67942300F81E17 /* Resources */ = {
@@ -318,6 +285,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -390,9 +358,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FutureProofing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -407,9 +380,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FutureProofing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -418,16 +396,13 @@
 		E9F189471A67942300F81E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = FutureProofingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,12 +410,9 @@
 		E9F189481A67942300F81E17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = FutureProofingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
