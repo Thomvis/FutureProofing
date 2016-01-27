@@ -7,13 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9D923A81A6C52E100CADD9F /* NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D923A61A6C52E100CADD9F /* NSURLSession.swift */; };
-		E9D923A91A6C52E100CADD9F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D923A71A6C52E100CADD9F /* UIView.swift */; };
+		C429E9DA1C54B73C00BF81D9 /* PHPhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9D91C54B73C00BF81D9 /* PHPhotoLibrary.swift */; };
+		C429E9DF1C54B85B00BF81D9 /* CKContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9DD1C54B85B00BF81D9 /* CKContainer.swift */; };
+		C429E9E01C54B85B00BF81D9 /* CKContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9DD1C54B85B00BF81D9 /* CKContainer.swift */; };
+		C429E9E11C54B85B00BF81D9 /* CKDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9DE1C54B85B00BF81D9 /* CKDatabase.swift */; };
+		C429E9E21C54B85B00BF81D9 /* CKDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9DE1C54B85B00BF81D9 /* CKDatabase.swift */; };
+		C429E9F01C54BF7200BF81D9 /* ACAccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9EF1C54BF7200BF81D9 /* ACAccountStore.swift */; };
+		C429E9F11C54BF7200BF81D9 /* ACAccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9EF1C54BF7200BF81D9 /* ACAccountStore.swift */; };
+		C429E9F41C54C83200BF81D9 /* WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9F31C54C83200BF81D9 /* WKWebView.swift */; };
+		C429E9F51C54C83200BF81D9 /* WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9F31C54C83200BF81D9 /* WKWebView.swift */; };
+		C429E9F81C54CAA300BF81D9 /* AVAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9F71C54CAA300BF81D9 /* AVAudioSession.swift */; };
+		C429E9FB1C54CABA00BF81D9 /* AVCaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9FA1C54CABA00BF81D9 /* AVCaptureDevice.swift */; };
+		C429E9FF1C54D1E100BF81D9 /* HMHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9FE1C54D1E100BF81D9 /* HMHomeManager.swift */; };
+		C47AD6931C4FAB680071E215 /* NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6921C4FAB680071E215 /* NSURLSession.swift */; };
+		C47AD6961C4FAB780071E215 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6951C4FAB780071E215 /* UIView.swift */; };
+		C47AD6A51C4FAD750071E215 /* FutureProofing.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F189321A67942300F81E17 /* FutureProofing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C47AD6A61C4FAD8A0071E215 /* NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6921C4FAB680071E215 /* NSURLSession.swift */; };
+		C47AD6AB1C4FAF670071E215 /* NSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6AA1C4FAF670071E215 /* NSNotificationCenter.swift */; };
+		C47AD6AC1C4FAF670071E215 /* NSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6AA1C4FAF670071E215 /* NSNotificationCenter.swift */; };
+		C47AD6B71C4FBEBB0071E215 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47AD6B51C4FBEBB0071E215 /* BrightFutures.framework */; };
+		C47AD6B81C4FBEBB0071E215 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47AD6B61C4FBEBB0071E215 /* Result.framework */; };
+		C47AD6BE1C4FC0A10071E215 /* CLGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6BC1C4FC0A10071E215 /* CLGeocoder.swift */; };
+		C47AD6C21C4FC2470071E215 /* SKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C11C4FC2470071E215 /* SKRequest.swift */; };
+		C47AD6C31C4FC2470071E215 /* SKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C11C4FC2470071E215 /* SKRequest.swift */; };
+		C47AD6C51C4FD59C0071E215 /* NSItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C41C4FD59C0071E215 /* NSItemProvider.swift */; };
+		C47AD6C61C4FD59C0071E215 /* NSItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C41C4FD59C0071E215 /* NSItemProvider.swift */; };
+		C47AD6CA1C4FD7910071E215 /* MKDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C81C4FD7910071E215 /* MKDirections.swift */; };
+		C47AD6CB1C4FD7910071E215 /* MKDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C81C4FD7910071E215 /* MKDirections.swift */; };
+		C47AD6CC1C4FD7910071E215 /* MKMapSnapshotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C91C4FD7910071E215 /* MKMapSnapshotter.swift */; };
+		C47AD6CD1C4FD7910071E215 /* MKMapSnapshotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C91C4FD7910071E215 /* MKMapSnapshotter.swift */; };
 		E9F189331A67942300F81E17 /* FutureProofing.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F189321A67942300F81E17 /* FutureProofing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9F189391A67942300F81E17 /* FutureProofing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F1892D1A67942300F81E17 /* FutureProofing.framework */; };
 		E9F189401A67942300F81E17 /* FutureProofingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1893F1A67942300F81E17 /* FutureProofingTests.swift */; };
-		E9F69BAE1B933FCE00713A91 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F69BAD1B933FCE00713A91 /* BrightFutures.framework */; settings = {ASSET_TAGS = (); }; };
-		E9F69BB01B933FD200713A91 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F69BAF1B933FD200713A91 /* Result.framework */; settings = {ASSET_TAGS = (); }; };
+		E9F69BAE1B933FCE00713A91 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F69BAD1B933FCE00713A91 /* BrightFutures.framework */; };
+		E9F69BB01B933FD200713A91 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F69BAF1B933FD200713A91 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +54,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E9D923A61A6C52E100CADD9F /* NSURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSession.swift; sourceTree = "<group>"; };
-		E9D923A71A6C52E100CADD9F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		C429E9D91C54B73C00BF81D9 /* PHPhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPhotoLibrary.swift; sourceTree = "<group>"; };
+		C429E9DD1C54B85B00BF81D9 /* CKContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKContainer.swift; sourceTree = "<group>"; };
+		C429E9DE1C54B85B00BF81D9 /* CKDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDatabase.swift; sourceTree = "<group>"; };
+		C429E9EF1C54BF7200BF81D9 /* ACAccountStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACAccountStore.swift; sourceTree = "<group>"; };
+		C429E9F31C54C83200BF81D9 /* WKWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebView.swift; sourceTree = "<group>"; };
+		C429E9F71C54CAA300BF81D9 /* AVAudioSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioSession.swift; sourceTree = "<group>"; };
+		C429E9FA1C54CABA00BF81D9 /* AVCaptureDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureDevice.swift; sourceTree = "<group>"; };
+		C429E9FE1C54D1E100BF81D9 /* HMHomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHomeManager.swift; sourceTree = "<group>"; };
+		C47AD6921C4FAB680071E215 /* NSURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSession.swift; sourceTree = "<group>"; };
+		C47AD6951C4FAB780071E215 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		C47AD69D1C4FACB90071E215 /* FutureProofing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FutureProofing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47AD6AA1C4FAF670071E215 /* NSNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationCenter.swift; sourceTree = "<group>"; };
+		C47AD6B51C4FBEBB0071E215 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/Mac/BrightFutures.framework; sourceTree = "<group>"; };
+		C47AD6B61C4FBEBB0071E215 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		C47AD6BC1C4FC0A10071E215 /* CLGeocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLGeocoder.swift; sourceTree = "<group>"; };
+		C47AD6C11C4FC2470071E215 /* SKRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKRequest.swift; sourceTree = "<group>"; };
+		C47AD6C41C4FD59C0071E215 /* NSItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSItemProvider.swift; sourceTree = "<group>"; };
+		C47AD6C81C4FD7910071E215 /* MKDirections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKDirections.swift; sourceTree = "<group>"; };
+		C47AD6C91C4FD7910071E215 /* MKMapSnapshotter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapSnapshotter.swift; sourceTree = "<group>"; };
 		E9F1892D1A67942300F81E17 /* FutureProofing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FutureProofing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F189311A67942300F81E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F189321A67942300F81E17 /* FutureProofing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FutureProofing.h; sourceTree = "<group>"; };
@@ -40,6 +84,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C47AD6991C4FACB90071E215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47AD6B71C4FBEBB0071E215 /* BrightFutures.framework in Frameworks */,
+				C47AD6B81C4FBEBB0071E215 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9F189291A67942300F81E17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,13 +113,116 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E9D923AA1A6C52E800CADD9F /* Core */ = {
+		C429E9D81C54B73C00BF81D9 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
-				E9D923A61A6C52E100CADD9F /* NSURLSession.swift */,
-				E9D923A71A6C52E100CADD9F /* UIView.swift */,
+				C429E9D91C54B73C00BF81D9 /* PHPhotoLibrary.swift */,
 			);
-			name = Core;
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		C429E9DC1C54B85B00BF81D9 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				C429E9DD1C54B85B00BF81D9 /* CKContainer.swift */,
+				C429E9DE1C54B85B00BF81D9 /* CKDatabase.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		C429E9EE1C54BF7200BF81D9 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				C429E9EF1C54BF7200BF81D9 /* ACAccountStore.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		C429E9F21C54C82800BF81D9 /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				C429E9F31C54C83200BF81D9 /* WKWebView.swift */,
+			);
+			path = WebKit;
+			sourceTree = "<group>";
+		};
+		C429E9F61C54CAA300BF81D9 /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				C429E9F71C54CAA300BF81D9 /* AVAudioSession.swift */,
+				C429E9FA1C54CABA00BF81D9 /* AVCaptureDevice.swift */,
+			);
+			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		C429E9FD1C54D1D000BF81D9 /* HomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				C429E9FE1C54D1E100BF81D9 /* HMHomeManager.swift */,
+			);
+			name = HomeKit;
+			path = FutureProofing/HomeKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		C47AD6941C4FAB6C0071E215 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				C47AD6921C4FAB680071E215 /* NSURLSession.swift */,
+				C47AD6AA1C4FAF670071E215 /* NSNotificationCenter.swift */,
+				C47AD6C41C4FD59C0071E215 /* NSItemProvider.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		C47AD6971C4FAB7A0071E215 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C47AD6951C4FAB780071E215 /* UIView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C47AD6B31C4FBE910071E215 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E9F69BAF1B933FD200713A91 /* Result.framework */,
+				E9F69BAD1B933FCE00713A91 /* BrightFutures.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C47AD6B41C4FBE970071E215 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				C47AD6B51C4FBEBB0071E215 /* BrightFutures.framework */,
+				C47AD6B61C4FBEBB0071E215 /* Result.framework */,
+			);
+			name = OSX;
+			sourceTree = "<group>";
+		};
+		C47AD6BB1C4FC0A10071E215 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				C47AD6BC1C4FC0A10071E215 /* CLGeocoder.swift */,
+			);
+			path = CoreLocation;
+			sourceTree = "<group>";
+		};
+		C47AD6C01C4FC2470071E215 /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				C47AD6C11C4FC2470071E215 /* SKRequest.swift */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		C47AD6C71C4FD7910071E215 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				C47AD6C81C4FD7910071E215 /* MKDirections.swift */,
+				C47AD6C91C4FD7910071E215 /* MKMapSnapshotter.swift */,
+			);
+			path = MapKit;
 			sourceTree = "<group>";
 		};
 		E9F189231A67942300F81E17 = {
@@ -84,6 +240,7 @@
 			children = (
 				E9F1892D1A67942300F81E17 /* FutureProofing.framework */,
 				E9F189381A67942300F81E17 /* FutureProofingTests.xctest */,
+				C47AD69D1C4FACB90071E215 /* FutureProofing.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,7 +248,17 @@
 		E9F1892F1A67942300F81E17 /* FutureProofing */ = {
 			isa = PBXGroup;
 			children = (
-				E9D923AA1A6C52E800CADD9F /* Core */,
+				C429E9EE1C54BF7200BF81D9 /* Accounts */,
+				C429E9F61C54CAA300BF81D9 /* AVFoundation */,
+				C429E9DC1C54B85B00BF81D9 /* CloudKit */,
+				C47AD6BB1C4FC0A10071E215 /* CoreLocation */,
+				C47AD6941C4FAB6C0071E215 /* Foundation */,
+				C429E9FD1C54D1D000BF81D9 /* HomeKit */,
+				C47AD6C71C4FD7910071E215 /* MapKit */,
+				C429E9D81C54B73C00BF81D9 /* Photos */,
+				C47AD6C01C4FC2470071E215 /* StoreKit */,
+				C429E9F21C54C82800BF81D9 /* WebKit */,
+				C47AD6971C4FAB7A0071E215 /* UIKit */,
 				E9F189321A67942300F81E17 /* FutureProofing.h */,
 				E9F189301A67942300F81E17 /* Supporting Files */,
 			);
@@ -126,8 +293,8 @@
 		E9F69BAC1B933FC100713A91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E9F69BAF1B933FD200713A91 /* Result.framework */,
-				E9F69BAD1B933FCE00713A91 /* BrightFutures.framework */,
+				C47AD6B41C4FBE970071E215 /* OSX */,
+				C47AD6B31C4FBE910071E215 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +302,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		C47AD69A1C4FACB90071E215 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C47AD6A51C4FAD750071E215 /* FutureProofing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9F1892A1A67942300F81E17 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +321,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C47AD69C1C4FACB90071E215 /* FutureProofing-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47AD6A21C4FACB90071E215 /* Build configuration list for PBXNativeTarget "FutureProofing-Mac" */;
+			buildPhases = (
+				C47AD6981C4FACB90071E215 /* Sources */,
+				C47AD6991C4FACB90071E215 /* Frameworks */,
+				C47AD69A1C4FACB90071E215 /* Headers */,
+				C47AD69B1C4FACB90071E215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FutureProofing-Mac";
+			productName = "FutureProofing-Mac";
+			productReference = C47AD69D1C4FACB90071E215 /* FutureProofing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		E9F1892C1A67942300F81E17 /* FutureProofing */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9F189431A67942300F81E17 /* Build configuration list for PBXNativeTarget "FutureProofing" */;
@@ -188,10 +381,13 @@
 		E9F189241A67942300F81E17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Thomas Visser";
 				TargetAttributes = {
+					C47AD69C1C4FACB90071E215 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					E9F1892C1A67942300F81E17 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -214,11 +410,19 @@
 			targets = (
 				E9F1892C1A67942300F81E17 /* FutureProofing */,
 				E9F189371A67942300F81E17 /* FutureProofingTests */,
+				C47AD69C1C4FACB90071E215 /* FutureProofing-Mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C47AD69B1C4FACB90071E215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9F1892B1A67942300F81E17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,12 +440,43 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C47AD6981C4FACB90071E215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C429E9F51C54C83200BF81D9 /* WKWebView.swift in Sources */,
+				C47AD6AC1C4FAF670071E215 /* NSNotificationCenter.swift in Sources */,
+				C429E9F11C54BF7200BF81D9 /* ACAccountStore.swift in Sources */,
+				C47AD6CD1C4FD7910071E215 /* MKMapSnapshotter.swift in Sources */,
+				C47AD6CB1C4FD7910071E215 /* MKDirections.swift in Sources */,
+				C47AD6C61C4FD59C0071E215 /* NSItemProvider.swift in Sources */,
+				C429E9E21C54B85B00BF81D9 /* CKDatabase.swift in Sources */,
+				C47AD6A61C4FAD8A0071E215 /* NSURLSession.swift in Sources */,
+				C47AD6C31C4FC2470071E215 /* SKRequest.swift in Sources */,
+				C429E9E01C54B85B00BF81D9 /* CKContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9F189281A67942300F81E17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9D923A91A6C52E100CADD9F /* UIView.swift in Sources */,
-				E9D923A81A6C52E100CADD9F /* NSURLSession.swift in Sources */,
+				C429E9E11C54B85B00BF81D9 /* CKDatabase.swift in Sources */,
+				C47AD6BE1C4FC0A10071E215 /* CLGeocoder.swift in Sources */,
+				C47AD6CA1C4FD7910071E215 /* MKDirections.swift in Sources */,
+				C47AD6CC1C4FD7910071E215 /* MKMapSnapshotter.swift in Sources */,
+				C429E9F81C54CAA300BF81D9 /* AVAudioSession.swift in Sources */,
+				C47AD6961C4FAB780071E215 /* UIView.swift in Sources */,
+				C47AD6C51C4FD59C0071E215 /* NSItemProvider.swift in Sources */,
+				C429E9DF1C54B85B00BF81D9 /* CKContainer.swift in Sources */,
+				C429E9F41C54C83200BF81D9 /* WKWebView.swift in Sources */,
+				C47AD6C21C4FC2470071E215 /* SKRequest.swift in Sources */,
+				C429E9FF1C54D1E100BF81D9 /* HMHomeManager.swift in Sources */,
+				C429E9FB1C54CABA00BF81D9 /* AVCaptureDevice.swift in Sources */,
+				C47AD6AB1C4FAF670071E215 /* NSNotificationCenter.swift in Sources */,
+				C429E9DA1C54B73C00BF81D9 /* PHPhotoLibrary.swift in Sources */,
+				C47AD6931C4FAB680071E215 /* NSURLSession.swift in Sources */,
+				C429E9F01C54BF7200BF81D9 /* ACAccountStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +499,61 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C47AD6A31C4FACB90071E215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "FutureProofing/Info-Mac.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.thomvis.FutureProofing;
+				PRODUCT_NAME = FutureProofing;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C47AD6A41C4FACB90071E215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "FutureProofing/Info-Mac.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.thomvis.FutureProofing;
+				PRODUCT_NAME = FutureProofing;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		E9F189411A67942300F81E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,6 +710,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C47AD6A21C4FACB90071E215 /* Build configuration list for PBXNativeTarget "FutureProofing-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47AD6A31C4FACB90071E215 /* Debug */,
+				C47AD6A41C4FACB90071E215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E9F189271A67942300F81E17 /* Build configuration list for PBXProject "FutureProofing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

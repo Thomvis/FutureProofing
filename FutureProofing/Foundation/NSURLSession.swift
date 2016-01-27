@@ -73,9 +73,9 @@ extension NSURLSession {
     func completionHandler(promise p: Promise<(NSData?, NSURLResponse?), NSError>) -> (NSData?, NSURLResponse?, NSError?) -> Void {
         return { (data, response, error) -> () in
             if let error = error {
-                try! p.failure(error)
+                p.failure(error)
             } else {
-                try! p.success(data, response)
+                p.success(data, response)
             }
         }
     }
@@ -83,9 +83,9 @@ extension NSURLSession {
     func downloadTaskCompletionHandler(promise p: Promise<(NSURL?, NSURLResponse?), NSError>) -> (NSURL?, NSURLResponse?, NSError?) -> Void {
         return { (url, response, error) -> () in
             if let error = error {
-                try! p.failure(error)
+                p.failure(error)
             } else {
-                try! p.success(url, response)
+                p.success(url, response)
             }
         }
     }
