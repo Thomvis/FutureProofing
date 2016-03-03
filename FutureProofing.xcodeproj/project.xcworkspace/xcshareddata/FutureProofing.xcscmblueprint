@@ -5,11 +5,13 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "93608FFF008CD82ADDFA850BB9C1630FA754586F" : 0,
+    "F5B4EC300E7199406BA2B2AA6070092FA65DDD89" : 0,
     "91555DBC133315456E6D6EEAA4FC80CC29E47408" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4D3987D5-9AC7-4B37-B625-0D31B92B959A",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "93608FFF008CD82ADDFA850BB9C1630FA754586F" : "FutureProofingBrightFutures",
+    "F5B4EC300E7199406BA2B2AA6070092FA65DDD89" : "PromiseKit\/",
     "91555DBC133315456E6D6EEAA4FC80CC29E47408" : "FutureProofing"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "FutureProofing",
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Thomvis\/BrightFutures.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "93608FFF008CD82ADDFA850BB9C1630FA754586F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mxcl\/PromiseKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F5B4EC300E7199406BA2B2AA6070092FA65DDD89"
     }
   ]
 }

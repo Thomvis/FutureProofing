@@ -1,1 +1,1 @@
-github "Thomvis/BrightFutures" "v3.0.0-beta.3"
+github "Thomvis/BrightFutures" ~> 3.3

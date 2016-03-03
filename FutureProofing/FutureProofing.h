@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Thomas Visser. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for FutureProofing.
 FOUNDATION_EXPORT double FutureProofingVersionNumber;
