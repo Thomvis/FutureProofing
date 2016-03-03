@@ -3,6 +3,8 @@ A companion library to BrightFutures with extensions to CocoaTouch that provides
 
 The goal for this library is to become a community driven, best practice, helper-framework that most users of BrightFutures include when using the core library.
 
+This project is inspired by, and based in part on, the [PromiseKit categories](https://github.com/mxcl/PromiseKit/tree/master/Categories).
+
 ## Extensions
 
 ### UIView
