@@ -339,9 +339,9 @@
 			productReference = C47AD69D1C4FACB90071E215 /* FutureProofing.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E9F1892C1A67942300F81E17 /* FutureProofing */ = {
+		E9F1892C1A67942300F81E17 /* FutureProofing-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9F189431A67942300F81E17 /* Build configuration list for PBXNativeTarget "FutureProofing" */;
+			buildConfigurationList = E9F189431A67942300F81E17 /* Build configuration list for PBXNativeTarget "FutureProofing-iOS" */;
 			buildPhases = (
 				E9F189281A67942300F81E17 /* Sources */,
 				E9F189291A67942300F81E17 /* Frameworks */,
@@ -352,7 +352,7 @@
 			);
 			dependencies = (
 			);
-			name = FutureProofing;
+			name = "FutureProofing-iOS";
 			productName = FutureProofing;
 			productReference = E9F1892D1A67942300F81E17 /* FutureProofing.framework */;
 			productType = "com.apple.product-type.framework";
@@ -408,7 +408,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9F1892C1A67942300F81E17 /* FutureProofing */,
+				E9F1892C1A67942300F81E17 /* FutureProofing-iOS */,
 				E9F189371A67942300F81E17 /* FutureProofingTests */,
 				C47AD69C1C4FACB90071E215 /* FutureProofing-Mac */,
 			);
@@ -493,7 +493,7 @@
 /* Begin PBXTargetDependency section */
 		E9F1893B1A67942300F81E17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9F1892C1A67942300F81E17 /* FutureProofing */;
+			target = E9F1892C1A67942300F81E17 /* FutureProofing-iOS */;
 			targetProxy = E9F1893A1A67942300F81E17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -502,7 +502,6 @@
 		C47AD6A31C4FACB90071E215 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -529,7 +528,6 @@
 		C47AD6A41C4FACB90071E215 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -656,7 +654,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FutureProofing;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -678,7 +676,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FutureProofing;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -728,7 +726,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9F189431A67942300F81E17 /* Build configuration list for PBXNativeTarget "FutureProofing" */ = {
+		E9F189431A67942300F81E17 /* Build configuration list for PBXNativeTarget "FutureProofing-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9F189441A67942300F81E17 /* Debug */,

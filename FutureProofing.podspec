@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FutureProofing"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "Provide a Future based interface to asynchronous API."
   s.description  = <<-DESC
                    A companion library to BrightFutures with extensions that
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
 
   s.source       = { :git => "https://github.com/Thomvis/FutureProofing.git", :tag => "v#{s.version}" }
-  s.dependency "BrightFutures", "~> 3.2"
+  s.dependency "BrightFutures", "~> 3.3"
 
   s.default_subspec = 'Foundation'
 

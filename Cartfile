@@ -1,1 +1,1 @@
-github "Thomvis/BrightFutures" "HEAD"
+github "Thomvis/BrightFutures" ~> 3.3
