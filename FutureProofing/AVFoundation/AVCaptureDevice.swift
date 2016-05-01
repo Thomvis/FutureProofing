@@ -7,6 +7,7 @@
 //
 import AVFoundation
 import BrightFutures
+import Result
 
 extension AVCaptureDevice {
     

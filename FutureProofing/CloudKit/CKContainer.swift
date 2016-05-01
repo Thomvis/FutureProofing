@@ -22,9 +22,11 @@ extension CKContainer {
         return future { self.statusForApplicationPermission(applicationPermissions, completionHandler: $0) }
     }
 
+#if !os(tvOS)
     public func discoverAllContactUserInfos() -> Future<[CKDiscoveredUserInfo], BrightFuturesError<NSError>> {
         return future { self.discoverAllContactUserInfosWithCompletionHandler($0) }
     }
+#endif
 
     public func discoverUserInfo(email email: String) -> Future<CKDiscoveredUserInfo, BrightFuturesError<NSError>> {
         return future { self.discoverUserInfoWithEmailAddress(email, completionHandler: $0) }

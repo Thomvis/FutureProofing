@@ -7,6 +7,7 @@
 //
 import BrightFutures
 import Photos
+import Result
 
 extension PHPhotoLibrary {
 

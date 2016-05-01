@@ -7,6 +7,7 @@
 //
 import Foundation.NSNotification
 import BrightFutures
+import Result
 
 extension NSNotificationCenter {
 
