@@ -19,6 +19,10 @@
 		C429E9F81C54CAA300BF81D9 /* AVAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9F71C54CAA300BF81D9 /* AVAudioSession.swift */; };
 		C429E9FB1C54CABA00BF81D9 /* AVCaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9FA1C54CABA00BF81D9 /* AVCaptureDevice.swift */; };
 		C429E9FF1C54D1E100BF81D9 /* HMHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9FE1C54D1E100BF81D9 /* HMHomeManager.swift */; };
+		C47281011D38F257002775ED /* NSAnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47281001D38F257002775ED /* NSAnimationContext.swift */; };
+		C47281031D38F7D5002775ED /* NSWindowRestoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47281021D38F7D5002775ED /* NSWindowRestoration.swift */; };
+		C47281051D38F8D1002775ED /* NSDocumentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47281041D38F8D1002775ED /* NSDocumentController.swift */; };
+		C47281071D38F9B1002775ED /* NSWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47281061D38F9B1002775ED /* NSWindow.swift */; };
 		C47AD6931C4FAB680071E215 /* NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6921C4FAB680071E215 /* NSURLSession.swift */; };
 		C47AD6961C4FAB780071E215 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6951C4FAB780071E215 /* UIView.swift */; };
 		C47AD6A51C4FAD750071E215 /* FutureProofing.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F189321A67942300F81E17 /* FutureProofing.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,6 +66,10 @@
 		C429E9F71C54CAA300BF81D9 /* AVAudioSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioSession.swift; sourceTree = "<group>"; };
 		C429E9FA1C54CABA00BF81D9 /* AVCaptureDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureDevice.swift; sourceTree = "<group>"; };
 		C429E9FE1C54D1E100BF81D9 /* HMHomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHomeManager.swift; sourceTree = "<group>"; };
+		C47281001D38F257002775ED /* NSAnimationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAnimationContext.swift; sourceTree = "<group>"; };
+		C47281021D38F7D5002775ED /* NSWindowRestoration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSWindowRestoration.swift; sourceTree = "<group>"; };
+		C47281041D38F8D1002775ED /* NSDocumentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDocumentController.swift; sourceTree = "<group>"; };
+		C47281061D38F9B1002775ED /* NSWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSWindow.swift; sourceTree = "<group>"; };
 		C47AD6921C4FAB680071E215 /* NSURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSession.swift; sourceTree = "<group>"; };
 		C47AD6951C4FAB780071E215 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		C47AD69D1C4FACB90071E215 /* FutureProofing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FutureProofing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +192,17 @@
 			path = FutureProofing/HomeKit;
 			sourceTree = SOURCE_ROOT;
 		};
+		C47280FF1D38F216002775ED /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				C47281001D38F257002775ED /* NSAnimationContext.swift */,
+				C47281021D38F7D5002775ED /* NSWindowRestoration.swift */,
+				C47281041D38F8D1002775ED /* NSDocumentController.swift */,
+				C47281061D38F9B1002775ED /* NSWindow.swift */,
+			);
+			path = AppKit;
+			sourceTree = "<group>";
+		};
 		C47AD6941C4FAB6C0071E215 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +307,7 @@
 		E9F1892F1A67942300F81E17 /* FutureProofing */ = {
 			isa = PBXGroup;
 			children = (
+				C47280FF1D38F216002775ED /* AppKit */,
 				C429E9EE1C54BF7200BF81D9 /* Accounts */,
 				C429E9F61C54CAA300BF81D9 /* AVFoundation */,
 				C429E9DC1C54B85B00BF81D9 /* CloudKit */,
@@ -560,14 +580,18 @@
 			files = (
 				C429E9F51C54C83200BF81D9 /* WKWebView.swift in Sources */,
 				C47AD6AC1C4FAF670071E215 /* NSNotificationCenter.swift in Sources */,
+				C47281071D38F9B1002775ED /* NSWindow.swift in Sources */,
 				C429E9F11C54BF7200BF81D9 /* ACAccountStore.swift in Sources */,
 				C47AD6CD1C4FD7910071E215 /* MKMapSnapshotter.swift in Sources */,
+				C47281011D38F257002775ED /* NSAnimationContext.swift in Sources */,
 				C47AD6CB1C4FD7910071E215 /* MKDirections.swift in Sources */,
+				C47281051D38F8D1002775ED /* NSDocumentController.swift in Sources */,
 				C47AD6C61C4FD59C0071E215 /* NSItemProvider.swift in Sources */,
 				C429E9E21C54B85B00BF81D9 /* CKDatabase.swift in Sources */,
 				C47AD6A61C4FAD8A0071E215 /* NSURLSession.swift in Sources */,
 				C47AD6C31C4FC2470071E215 /* SKRequest.swift in Sources */,
 				C429E9E01C54B85B00BF81D9 /* CKContainer.swift in Sources */,
+				C47281031D38F7D5002775ED /* NSWindowRestoration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -944,6 +968,7 @@
 				E9E8F2041CD63AED00A65B40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E8F20F1CD63AFE00A65B40 /* Build configuration list for PBXNativeTarget "FutureProofing-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -952,6 +977,7 @@
 				E9E8F2111CD63AFE00A65B40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9F189271A67942300F81E17 /* Build configuration list for PBXProject "FutureProofing" */ = {
 			isa = XCConfigurationList;
