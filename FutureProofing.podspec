@@ -77,4 +77,9 @@ Pod::Spec.new do |s|
     ss.ios.frameworks = 'UIKit'
   end
 
+  s.subspec 'AppKit' do |ss|
+    ss.osx.source_files = 'FutureProofing/AppKit/*'
+    ss.osx.frameworks = 'AppKit'
+  end
+
 end
