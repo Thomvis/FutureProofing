@@ -11,8 +11,8 @@ import Result
 
 extension AVAudioSession {
 
-    public func requestRecordPermission() -> Future<Bool, NoError> {
-        return future { self.requestRecordPermission($0) }
+    open func requestRecordPermission() -> Future<Bool, NoError> {
+        return materialize { self.requestRecordPermission($0) }
     }
 
 }

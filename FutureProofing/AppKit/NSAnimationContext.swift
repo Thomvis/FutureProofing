@@ -10,10 +10,10 @@ import AppKit
 import BrightFutures
 import Result
 
-public extension NSAnimationContext {
-    
-    public class func runAnimationGroup(changes: (NSAnimationContext) -> Void)  -> Future<Void, NoError> {
-        return future { self.runAnimationGroup(changes, completionHandler: $0) }
+extension NSAnimationContext {
+
+    open class func runAnimationGroup(changes: (NSAnimationContext) -> Void)  -> Future<Void, NoError> {
+        return materialize { self.runAnimationGroup(changes, completionHandler: $0) }
     }
 
 }

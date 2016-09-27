@@ -10,10 +10,10 @@ import AppKit
 import BrightFutures
 import Result
 
-public extension NSWindowRestoration {
+extension NSWindowRestoration {
 
-    public static func restoreWindowWithIdentifier(identifier: String, state: NSCoder) -> Future<NSWindow?, BrightFuturesError<NSError>> {
-        return future { self.restoreWindowWithIdentifier(identifier, state: state, completionHandler: $0) }
+    public static func restoreWindow(withIdentifier identifier: String, state: NSCoder) -> Future<NSWindow?, AnyError> {
+        return materialize { self.restoreWindow(withIdentifier: identifier, state: state, completionHandler: $0) }
     }
 
 }

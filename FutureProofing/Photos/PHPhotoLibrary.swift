@@ -11,12 +11,12 @@ import Result
 
 extension PHPhotoLibrary {
 
-    public class func requestAuthorizadtionr() -> Future<PHAuthorizationStatus, NoError> {
-        return future { PHPhotoLibrary.requestAuthorization($0) }
+    open class func requestAuthorizadtionr() -> Future<PHAuthorizationStatus, NoError> {
+        return materialize { PHPhotoLibrary.requestAuthorization($0) }
     }
 
-    public func performChanges(changeBlock: dispatch_block_t) -> Future<Bool, BrightFuturesError<NSError>> {
-        return future { self.performChanges(changeBlock, completionHandler: $0) }
+    open func performChanges(_ changeBlock: @escaping () -> Swift.Void) -> Future<Bool, AnyError> {
+        return materialize { self.performChanges(changeBlock, completionHandler: $0) }
     }
 
 }

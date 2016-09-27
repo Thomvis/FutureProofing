@@ -10,37 +10,22 @@ import AppKit
 import BrightFutures
 import Result
 
-public extension NSDocumentController {
+extension NSDocumentController {
 
-    public func beginOpenPanel() -> Future<[NSURL]?, NoError> {
-        return future { self.beginOpenPanelWithCompletionHandler($0) }
+    open func beginOpenPanel() -> Future<[URL]?, NoError> {
+        return materialize { self.beginOpenPanel(completionHandler: $0) }
     }
 
-    public func beginOpenPanel(openPanel: NSOpenPanel, forTypes inTypes: [String]?) -> Future<Int, NoError> {
-        return future { self.beginOpenPanel(openPanel, forTypes: inTypes, completionHandler: $0) }
+    open func beginOpenPanel(openPanel: NSOpenPanel, forTypes inTypes: [String]?) -> Future<Int, NoError> {
+        return materialize { self.beginOpenPanel(openPanel, forTypes: inTypes, completionHandler: $0) }
     }
 
-    public func openDocumentWithContentsOfURL(url: NSURL, display displayDocument: Bool) -> Future<(NSDocument?, Bool), BrightFuturesError<NSError>> {
-        return future { self.openDocumentWithContentsOfURL(url, display: displayDocument, completionHandler: $0) }
+    open func openDocument(withContentsOf url: URL, display displayDocument: Bool) -> Future<(NSDocument?, Bool), AnyError> {
+        return materialize { self.openDocument(withContentsOf: url, display: displayDocument, completionHandler: $0) }
     }
 
-    public func reopenDocumentForURL(urlOrNil: NSURL?, withContentsOfURL contentsURL: NSURL, display displayDocument: Bool) -> Future<(NSDocument?, Bool), BrightFuturesError<NSError>> {
-        return future { self.reopenDocumentForURL(urlOrNil, withContentsOfURL: contentsURL, display: displayDocument, completionHandler: $0) }
+    open func reopenDocument(for urlOrNil: URL?, withContentsOf contentsURL: URL, display displayDocument: Bool) -> Future<(NSDocument?, Bool), AnyError> {
+        return materialize { self.reopenDocument(for: urlOrNil, withContentsOf: contentsURL, display: displayDocument, completionHandler: $0) }
     }
 
-}
-
-// TODO move to BrightFutures
-private func future<T, U, E>(method: ((T?, U, E?) -> Void) -> Void) -> Future<(T,U), BrightFuturesError<E>> {
-    return Future(resolver: { completion -> Void in
-        method { valueT, valueU, error in
-            if let value = valueT {
-                completion(.Success((value, valueU)))
-            } else if let error = error {
-                completion(.Failure(.External(error)))
-            } else {
-                completion(.Failure(.IllegalState))
-            }
-        }
-    })
 }

@@ -10,20 +10,20 @@ import BrightFutures
 
 extension CLGeocoder {
 
-    public func reverseGeocodeLocation(location: CLLocation) -> Future<[CLPlacemark], BrightFuturesError<NSError>> {
-        return future { self.reverseGeocodeLocation(location, completionHandler: $0) }
+    open func reverseGeocodeLocation(_ location: CLLocation) -> Future<[CLPlacemark], AnyError> {
+        return materialize { self.reverseGeocodeLocation(location, completionHandler: $0) }
     }
 
-    public func geocodeAddressDictionary(addressDictionary: [String: String]) -> Future<[CLPlacemark], BrightFuturesError<NSError>> {
-        return future { self.geocodeAddressDictionary(addressDictionary, completionHandler: $0) }
+    open func geocodeAddressDictionary(_ addressDictionary: [String: String]) -> Future<[CLPlacemark], AnyError> {
+        return materialize { self.geocodeAddressDictionary(addressDictionary, completionHandler: $0) }
     }
     
-    public func geocodeAddressString(addressString: String) -> Future<[CLPlacemark], BrightFuturesError<NSError>> {
-        return geocodeAddressString(addressString, region: nil)
+    open func geocodeAddressString(_ addressString: String) -> Future<[CLPlacemark], AnyError> {
+        return geocodeAddressString(addressString, inRegion: nil)
     }
     
-    public func geocodeAddressString(addressString: String, region: CLRegion?) -> Future<[CLPlacemark], BrightFuturesError<NSError>> {
-        return future { self.geocodeAddressString(addressString, inRegion: region, completionHandler: $0) }
+    open func geocodeAddressString(_ addressString: String, inRegion region: CLRegion?) -> Future<[CLPlacemark], AnyError> {
+        return materialize { self.geocodeAddressString(addressString, in: region, completionHandler: $0) }
     }
 
 }

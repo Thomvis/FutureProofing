@@ -11,8 +11,8 @@ import Result
 
 extension AVCaptureDevice {
     
-    public class func requestAccessForMediaType(mediaType: String) -> Future<Bool, NoError> {
-        return  future { self.requestAccessForMediaType(mediaType, completionHandler: $0) }
+    open class func requestAccess(forMediaType mediaType: String) -> Future<Bool, NoError> {
+        return  materialize { self.requestAccess(forMediaType: mediaType, completionHandler: $0) }
     }
     
 }

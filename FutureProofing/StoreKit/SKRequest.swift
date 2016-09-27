@@ -10,7 +10,7 @@ import BrightFutures
 
 extension SKRequest {
 
-    public func future() -> Future<SKProductsResponse, NSError> {
+    open func future() -> Future<SKProductsResponse, SKError> {
         let promisable = PromisableDelegate()
         self.delegate = promisable
         promisable.retainCycle = promisable
@@ -20,23 +20,21 @@ extension SKRequest {
 
 }
 
-private class PromisableDelegate: NSObject, SKProductsRequestDelegate {
-    let promise = Promise<SKProductsResponse, NSError>()
+fileprivate class PromisableDelegate: NSObject, SKProductsRequestDelegate {
+    let promise = Promise<SKProductsResponse, SKError>()
     var retainCycle: PromisableDelegate?
-    
-    #if os(iOS)
-    @objc func request(request: SKRequest, didFailWithError error: NSError) {
-        promise.failure(error)
-        retainCycle = nil
-    }
-    #else
-    @objc func request(request: SKRequest, didFailWithError error: NSError?) {
-        promise.failure(error ?? NSError(domain: SKErrorDomain, code: SKErrorUnknown, userInfo: nil)  )
-        retainCycle = nil
-    }
-    #endif
 
-    @objc func productsRequest(request: SKProductsRequest, didReceiveResponse response: SKProductsResponse) {
+    @objc func request(_ request: SKRequest, didFailWithError error: Error) {
+        if let error = error as? SKError {
+            promise.failure(error)
+        }
+        else {
+            promise.failure(SKError(_nsError:NSError(domain: SKErrorDomain, code: SKError.unknown.rawValue, userInfo: nil)))
+        }
+        retainCycle = nil
+    }
+
+    @objc func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         promise.success(response)
         retainCycle = nil
     }

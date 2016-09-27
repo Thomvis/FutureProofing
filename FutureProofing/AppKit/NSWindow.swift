@@ -10,14 +10,14 @@ import AppKit
 import BrightFutures
 import Result
 
-public extension NSWindow {
-    
-    public func beginSheet(sheetWindow: NSWindow) -> Future<NSModalResponse, NoError> {
-        return future { self.beginSheet(sheetWindow, completionHandler: $0) }
+extension NSWindow {
+
+    open func beginSheet(sheetWindow: NSWindow) -> Future<NSModalResponse, NoError> {
+        return materialize { self.beginSheet(sheetWindow, completionHandler: $0) }
     }
 
-    public func beginCriticalSheet(sheetWindow: NSWindow) -> Future<NSModalResponse, NoError> {
-        return future { self.beginCriticalSheet(sheetWindow, completionHandler: $0) }
+    open func beginCriticalSheet(sheetWindow: NSWindow) -> Future<NSModalResponse, NoError> {
+        return materialize { self.beginCriticalSheet(sheetWindow, completionHandler: $0) }
     }
 
 }

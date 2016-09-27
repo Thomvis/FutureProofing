@@ -7,23 +7,24 @@
 //
 import Accounts
 import BrightFutures
+import Result
 
 extension ACAccountStore {
 
-    public func renewCredentialsForAccount(account: ACAccount) -> Future<ACAccountCredentialRenewResult, BrightFuturesError<NSError>> {
-        return future { self.renewCredentialsForAccount(account, completion: $0) }
+    open func renewCredentials(for account: ACAccount) -> Future<ACAccountCredentialRenewResult, AnyError> {
+        return materialize { self.renewCredentials(for: account, completion: $0) }
     }
     
-    public func requestAccessToAccountsWithType(type: ACAccountType, options: [String: AnyObject]? = nil) -> Future<Bool, BrightFuturesError<NSError>> {
-        return future { self.requestAccessToAccountsWithType(type, options: options, completion: $0) }
+    open func requestAccessToAccounts(with type: ACAccountType, options: [AnyHashable : Any]? = nil) -> Future<Bool, AnyError> {
+        return materialize { self.requestAccessToAccounts(with: type, options: options, completion: $0) }
     }
     
-    public func saveAccount(account: ACAccount) -> Future<Bool, BrightFuturesError<NSError>> {
-        return future { self.saveAccount(account, withCompletionHandler: $0) }
+    open func saveAccount(_ account: ACAccount) -> Future<Bool, AnyError> {
+        return materialize { self.saveAccount(account, withCompletionHandler: $0) }
     }
     
-    public func removeAccount(account: ACAccount) -> Future<Bool, BrightFuturesError<NSError>> {
-        return future { self.removeAccount(account, withCompletionHandler: $0) }
+    open func removeAccount(_ account: ACAccount) -> Future<Bool, AnyError> {
+        return materialize { self.removeAccount(account, withCompletionHandler: $0) }
     }
 
 }

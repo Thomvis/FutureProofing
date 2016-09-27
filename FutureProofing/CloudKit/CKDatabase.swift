@@ -10,65 +10,65 @@ import BrightFutures
 
 extension CKDatabase {
     
-    public func fetchRecordWithID(recordID: CKRecordID) -> Future<CKRecord, BrightFuturesError<NSError>>{
-        return future { self.fetchRecordWithID(recordID, completionHandler: $0) }
+    public func fetch(withRecordID recordID: CKRecordID) -> Future<CKRecord, AnyError> {
+        return materialize { self.fetch(withRecordID: recordID, completionHandler: $0) }
     }
 
-    public func fetchRecordZoneWithID(recordZoneID: CKRecordZoneID) -> Future<CKRecordZone, BrightFuturesError<NSError>> {
-        return future { self.fetchRecordZoneWithID(recordZoneID, completionHandler: $0) }
+    public func fetch(withRecordZoneID recordZoneID: CKRecordZoneID) -> Future<CKRecordZone, AnyError> {
+        return materialize { self.fetch(withRecordZoneID: recordZoneID, completionHandler: $0) }
     }
 
-    public func fetchSubscriptionWithID(subscriptionID: String) -> Future<CKSubscription, BrightFuturesError<NSError>> {
-        return future { self.fetchSubscriptionWithID(subscriptionID, completionHandler: $0) }
+    public func fetch(withSubscriptionID subscriptionID: String) -> Future<CKSubscription, AnyError> {
+        return materialize { self.fetch(withSubscriptionID: subscriptionID, completionHandler: $0) }
     }
 
-    public func fetchAllRecordZones() -> Future<[CKRecordZone], BrightFuturesError<NSError>> {
-        return future { self.fetchAllRecordZonesWithCompletionHandler($0) }
+    public func fetchAllRecordZones() -> Future<[CKRecordZone], AnyError> {
+        return materialize { self.fetchAllRecordZones(completionHandler: $0) }
     }
 
-    public func fetchAllSubscriptions() -> Future<[CKSubscription], BrightFuturesError<NSError>> {
-        return future { self.fetchAllSubscriptionsWithCompletionHandler($0) }
+    public func fetchAllSubscriptions() -> Future<[CKSubscription], AnyError> {
+        return materialize { self.fetchAllSubscriptions(completionHandler: $0) }
     }
 
-    public func save(record: CKRecord) -> Future<CKRecord, BrightFuturesError<NSError>> {
-        return future { self.saveRecord(record, completionHandler: $0) }
+    public func save(_ record: CKRecord) -> Future<CKRecord, AnyError> {
+        return materialize { self.save(record, completionHandler: $0) }
     }
 
-    public func save(recordZone: CKRecordZone) -> Future<CKRecordZone, BrightFuturesError<NSError>> {
-        return future { self.saveRecordZone(recordZone, completionHandler: $0) }
+    public func save(_ recordZone: CKRecordZone) -> Future<CKRecordZone, AnyError> {
+        return materialize { self.save(recordZone, completionHandler: $0) }
     }
 
-    public func save(subscription: CKSubscription) -> Future<CKSubscription, BrightFuturesError<NSError>> {
-        return future { self.saveSubscription(subscription, completionHandler: $0) }
+    public func save(_ subscription: CKSubscription) -> Future<CKSubscription, AnyError> {
+        return materialize { self.save(subscription, completionHandler: $0) }
     }
 
-    public func deleteRecordWithID(recordID: CKRecordID) -> Future<CKRecordID, BrightFuturesError<NSError>> {
-        return future { self.deleteRecordWithID(recordID, completionHandler: $0) }
+    public func delete(withRecordID recordID: CKRecordID) -> Future<CKRecordID, AnyError> {
+        return materialize { self.delete(withRecordID: recordID, completionHandler: $0) }
     }
 
-    public func deleteRecordZoneWithID(zoneID: CKRecordZoneID) -> Future<CKRecordZoneID, BrightFuturesError<NSError>> {
-        return future { self.deleteRecordZoneWithID(zoneID, completionHandler: $0) }
+    public func delete(withRecordZoneID zoneID: CKRecordZoneID) -> Future<CKRecordZoneID, AnyError> {
+        return materialize { self.delete(withRecordZoneID: zoneID, completionHandler: $0) }
     }
 
-    public func deleteSubscriptionWithID(subscriptionID: String) -> Future<String, BrightFuturesError<NSError>> {
-        return future { self.deleteSubscriptionWithID(subscriptionID, completionHandler: $0) }
+    public func delete(withSubscriptionID subscriptionID: String) -> Future<String, AnyError> {
+        return materialize { self.delete(withSubscriptionID: subscriptionID, completionHandler: $0) }
     }
 
-    public func performQuery(query: CKQuery, inZoneWithID zoneID: CKRecordZoneID? = nil) -> Future<[CKRecord], BrightFuturesError<NSError>> {
-        return future { self.performQuery(query, inZoneWithID: zoneID, completionHandler: $0) }
+    public func perform(_ query: CKQuery, inZoneWith zoneID: CKRecordZoneID? = nil) -> Future<[CKRecord], AnyError> {
+        return materialize { self.perform(query, inZoneWith: zoneID, completionHandler: $0) }
     }
 
-    public func performQuery(query: CKQuery, inZoneWithID zoneID: CKRecordZoneID? = nil) -> Future<CKRecord?, BrightFuturesError<NSError>> {
-        return future { resolve in
-            self.performQuery(query, inZoneWithID: zoneID) { records, error in
+    public func perform(_ query: CKQuery, inZoneWith zoneID: CKRecordZoneID? = nil) -> Future<CKRecord?, AnyError> {
+        return materialize { resolve in
+            self.perform(query, inZoneWith: zoneID) { records, error in
                 resolve(records?.first, error)
             }
         }
     }
 
-    public func fetchUserRecord(container: CKContainer = CKContainer.defaultContainer()) -> Future<CKRecord, BrightFuturesError<NSError>> {
+    public func fetchUserRecord(_ container: CKContainer = CKContainer.default()) -> Future<CKRecord, AnyError> {
         return container.fetchUserRecordID().flatMap { uid in
-            return self.fetchRecordWithID(uid)
+            return self.fetch(withRecordID: uid)
         }
     }
 }

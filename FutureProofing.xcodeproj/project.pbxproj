@@ -19,16 +19,40 @@
 		C429E9F81C54CAA300BF81D9 /* AVAudioSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9F71C54CAA300BF81D9 /* AVAudioSession.swift */; };
 		C429E9FB1C54CABA00BF81D9 /* AVCaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9FA1C54CABA00BF81D9 /* AVCaptureDevice.swift */; };
 		C429E9FF1C54D1E100BF81D9 /* HMHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9FE1C54D1E100BF81D9 /* HMHomeManager.swift */; };
+		C444228D1D99D7E5005AF80C /* CLGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6BC1C4FC0A10071E215 /* CLGeocoder.swift */; };
+		C44669331D99847700ABE260 /* BrightFuture+FutureProofing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44669321D99847700ABE260 /* BrightFuture+FutureProofing.swift */; };
+		C44669341D99847700ABE260 /* BrightFuture+FutureProofing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44669321D99847700ABE260 /* BrightFuture+FutureProofing.swift */; };
+		C44669351D99847700ABE260 /* BrightFuture+FutureProofing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44669321D99847700ABE260 /* BrightFuture+FutureProofing.swift */; };
+		C44669361D99847700ABE260 /* BrightFuture+FutureProofing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44669321D99847700ABE260 /* BrightFuture+FutureProofing.swift */; };
+		C44669371D99A0CE00ABE260 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E8F1F41CD63ABD00A65B40 /* BrightFutures.framework */; };
+		C44669381D99A0CF00ABE260 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E8F1F51CD63ABD00A65B40 /* Result.framework */; };
+		C44669391D99A0EC00ABE260 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E8F1F61CD63AC800A65B40 /* BrightFutures.framework */; };
+		C446693A1D99A0EE00ABE260 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E8F1F71CD63AC800A65B40 /* Result.framework */; };
+		C446693B1D99A10400ABE260 /* FutureProofing.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F189321A67942300F81E17 /* FutureProofing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C446693C1D99A10800ABE260 /* FutureProofing.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F189321A67942300F81E17 /* FutureProofing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C446693D1D99A17D00ABE260 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6951C4FAB780071E215 /* UIView.swift */; };
+		C44669411D99AC0C00ABE260 /* SKRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C11C4FC2470071E215 /* SKRequest.swift */; };
+		C44669421D99AC3C00ABE260 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6921C4FAB680071E215 /* URLSession.swift */; };
+		C44669431D99AC3C00ABE260 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6AA1C4FAF670071E215 /* NotificationCenter.swift */; };
+		C44669441D99AC3C00ABE260 /* NSItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C41C4FD59C0071E215 /* NSItemProvider.swift */; };
+		C44669451D99AC4200ABE260 /* CLGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6BC1C4FC0A10071E215 /* CLGeocoder.swift */; };
+		C44669461D99AC4E00ABE260 /* CKContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9DD1C54B85B00BF81D9 /* CKContainer.swift */; };
+		C44669471D99AC4E00ABE260 /* CKDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9DE1C54B85B00BF81D9 /* CKDatabase.swift */; };
+		C446694B1D99AC8700ABE260 /* MKDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C81C4FD7910071E215 /* MKDirections.swift */; };
+		C446694C1D99AC8700ABE260 /* MKMapSnapshotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C91C4FD7910071E215 /* MKMapSnapshotter.swift */; };
+		C446694F1D99AE9200ABE260 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6921C4FAB680071E215 /* URLSession.swift */; };
+		C44669501D99AE9200ABE260 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6AA1C4FAF670071E215 /* NotificationCenter.swift */; };
+		C44669511D99AE9200ABE260 /* NSItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6C41C4FD59C0071E215 /* NSItemProvider.swift */; };
 		C47281011D38F257002775ED /* NSAnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47281001D38F257002775ED /* NSAnimationContext.swift */; };
 		C47281031D38F7D5002775ED /* NSWindowRestoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47281021D38F7D5002775ED /* NSWindowRestoration.swift */; };
 		C47281051D38F8D1002775ED /* NSDocumentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47281041D38F8D1002775ED /* NSDocumentController.swift */; };
 		C47281071D38F9B1002775ED /* NSWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47281061D38F9B1002775ED /* NSWindow.swift */; };
-		C47AD6931C4FAB680071E215 /* NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6921C4FAB680071E215 /* NSURLSession.swift */; };
+		C47AD6931C4FAB680071E215 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6921C4FAB680071E215 /* URLSession.swift */; };
 		C47AD6961C4FAB780071E215 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6951C4FAB780071E215 /* UIView.swift */; };
 		C47AD6A51C4FAD750071E215 /* FutureProofing.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F189321A67942300F81E17 /* FutureProofing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C47AD6A61C4FAD8A0071E215 /* NSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6921C4FAB680071E215 /* NSURLSession.swift */; };
-		C47AD6AB1C4FAF670071E215 /* NSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6AA1C4FAF670071E215 /* NSNotificationCenter.swift */; };
-		C47AD6AC1C4FAF670071E215 /* NSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6AA1C4FAF670071E215 /* NSNotificationCenter.swift */; };
+		C47AD6A61C4FAD8A0071E215 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6921C4FAB680071E215 /* URLSession.swift */; };
+		C47AD6AB1C4FAF670071E215 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6AA1C4FAF670071E215 /* NotificationCenter.swift */; };
+		C47AD6AC1C4FAF670071E215 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6AA1C4FAF670071E215 /* NotificationCenter.swift */; };
 		C47AD6B71C4FBEBB0071E215 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47AD6B51C4FBEBB0071E215 /* BrightFutures.framework */; };
 		C47AD6B81C4FBEBB0071E215 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47AD6B61C4FBEBB0071E215 /* Result.framework */; };
 		C47AD6BE1C4FC0A10071E215 /* CLGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AD6BC1C4FC0A10071E215 /* CLGeocoder.swift */; };
@@ -66,14 +90,15 @@
 		C429E9F71C54CAA300BF81D9 /* AVAudioSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioSession.swift; sourceTree = "<group>"; };
 		C429E9FA1C54CABA00BF81D9 /* AVCaptureDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureDevice.swift; sourceTree = "<group>"; };
 		C429E9FE1C54D1E100BF81D9 /* HMHomeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMHomeManager.swift; sourceTree = "<group>"; };
+		C44669321D99847700ABE260 /* BrightFuture+FutureProofing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BrightFuture+FutureProofing.swift"; sourceTree = "<group>"; };
 		C47281001D38F257002775ED /* NSAnimationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAnimationContext.swift; sourceTree = "<group>"; };
 		C47281021D38F7D5002775ED /* NSWindowRestoration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSWindowRestoration.swift; sourceTree = "<group>"; };
 		C47281041D38F8D1002775ED /* NSDocumentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDocumentController.swift; sourceTree = "<group>"; };
 		C47281061D38F9B1002775ED /* NSWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSWindow.swift; sourceTree = "<group>"; };
-		C47AD6921C4FAB680071E215 /* NSURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSession.swift; sourceTree = "<group>"; };
+		C47AD6921C4FAB680071E215 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		C47AD6951C4FAB780071E215 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		C47AD69D1C4FACB90071E215 /* FutureProofing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FutureProofing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C47AD6AA1C4FAF670071E215 /* NSNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNotificationCenter.swift; sourceTree = "<group>"; };
+		C47AD6AA1C4FAF670071E215 /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
 		C47AD6B51C4FBEBB0071E215 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/Mac/BrightFutures.framework; sourceTree = "<group>"; };
 		C47AD6B61C4FBEBB0071E215 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		C47AD6BC1C4FC0A10071E215 /* CLGeocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLGeocoder.swift; sourceTree = "<group>"; };
@@ -111,6 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44669391D99A0EC00ABE260 /* BrightFutures.framework in Frameworks */,
+				C446693A1D99A0EE00ABE260 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +145,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44669371D99A0CE00ABE260 /* BrightFutures.framework in Frameworks */,
+				C44669381D99A0CF00ABE260 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,8 +235,8 @@
 		C47AD6941C4FAB6C0071E215 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				C47AD6921C4FAB680071E215 /* NSURLSession.swift */,
-				C47AD6AA1C4FAF670071E215 /* NSNotificationCenter.swift */,
+				C47AD6921C4FAB680071E215 /* URLSession.swift */,
+				C47AD6AA1C4FAF670071E215 /* NotificationCenter.swift */,
 				C47AD6C41C4FD59C0071E215 /* NSItemProvider.swift */,
 			);
 			path = Foundation;
@@ -307,6 +336,7 @@
 		E9F1892F1A67942300F81E17 /* FutureProofing */ = {
 			isa = PBXGroup;
 			children = (
+				C44669321D99847700ABE260 /* BrightFuture+FutureProofing.swift */,
 				C47280FF1D38F216002775ED /* AppKit */,
 				C429E9EE1C54BF7200BF81D9 /* Accounts */,
 				C429E9F61C54CAA300BF81D9 /* AVFoundation */,
@@ -376,6 +406,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C446693B1D99A10400ABE260 /* FutureProofing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +414,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C446693C1D99A10800ABE260 /* FutureProofing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +526,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Thomas Visser";
 				TargetAttributes = {
 					C47AD69C1C4FACB90071E215 = {
@@ -502,15 +534,19 @@
 					};
 					E9E8F1FC1CD63AED00A65B40 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					E9E8F2091CD63AFE00A65B40 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					E9F1892C1A67942300F81E17 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 					};
 					E9F189371A67942300F81E17 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -579,7 +615,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C429E9F51C54C83200BF81D9 /* WKWebView.swift in Sources */,
-				C47AD6AC1C4FAF670071E215 /* NSNotificationCenter.swift in Sources */,
+				C47AD6AC1C4FAF670071E215 /* NotificationCenter.swift in Sources */,
+				C444228D1D99D7E5005AF80C /* CLGeocoder.swift in Sources */,
 				C47281071D38F9B1002775ED /* NSWindow.swift in Sources */,
 				C429E9F11C54BF7200BF81D9 /* ACAccountStore.swift in Sources */,
 				C47AD6CD1C4FD7910071E215 /* MKMapSnapshotter.swift in Sources */,
@@ -588,7 +625,8 @@
 				C47281051D38F8D1002775ED /* NSDocumentController.swift in Sources */,
 				C47AD6C61C4FD59C0071E215 /* NSItemProvider.swift in Sources */,
 				C429E9E21C54B85B00BF81D9 /* CKDatabase.swift in Sources */,
-				C47AD6A61C4FAD8A0071E215 /* NSURLSession.swift in Sources */,
+				C44669341D99847700ABE260 /* BrightFuture+FutureProofing.swift in Sources */,
+				C47AD6A61C4FAD8A0071E215 /* URLSession.swift in Sources */,
 				C47AD6C31C4FC2470071E215 /* SKRequest.swift in Sources */,
 				C429E9E01C54B85B00BF81D9 /* CKContainer.swift in Sources */,
 				C47281031D38F7D5002775ED /* NSWindowRestoration.swift in Sources */,
@@ -599,6 +637,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C446694F1D99AE9200ABE260 /* URLSession.swift in Sources */,
+				C44669501D99AE9200ABE260 /* NotificationCenter.swift in Sources */,
+				C44669511D99AE9200ABE260 /* NSItemProvider.swift in Sources */,
+				C44669351D99847700ABE260 /* BrightFuture+FutureProofing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +648,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44669451D99AC4200ABE260 /* CLGeocoder.swift in Sources */,
+				C44669441D99AC3C00ABE260 /* NSItemProvider.swift in Sources */,
+				C44669471D99AC4E00ABE260 /* CKDatabase.swift in Sources */,
+				C446694C1D99AC8700ABE260 /* MKMapSnapshotter.swift in Sources */,
+				C44669411D99AC0C00ABE260 /* SKRequest.swift in Sources */,
+				C446693D1D99A17D00ABE260 /* UIView.swift in Sources */,
+				C446694B1D99AC8700ABE260 /* MKDirections.swift in Sources */,
+				C44669431D99AC3C00ABE260 /* NotificationCenter.swift in Sources */,
+				C44669461D99AC4E00ABE260 /* CKContainer.swift in Sources */,
+				C44669421D99AC3C00ABE260 /* URLSession.swift in Sources */,
+				C44669361D99847700ABE260 /* BrightFuture+FutureProofing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44669331D99847700ABE260 /* BrightFuture+FutureProofing.swift in Sources */,
 				C429E9E11C54B85B00BF81D9 /* CKDatabase.swift in Sources */,
 				C47AD6BE1C4FC0A10071E215 /* CLGeocoder.swift in Sources */,
 				C47AD6CA1C4FD7910071E215 /* MKDirections.swift in Sources */,
@@ -625,9 +679,9 @@
 				C47AD6C21C4FC2470071E215 /* SKRequest.swift in Sources */,
 				C429E9FF1C54D1E100BF81D9 /* HMHomeManager.swift in Sources */,
 				C429E9FB1C54CABA00BF81D9 /* AVCaptureDevice.swift in Sources */,
-				C47AD6AB1C4FAF670071E215 /* NSNotificationCenter.swift in Sources */,
+				C47AD6AB1C4FAF670071E215 /* NotificationCenter.swift in Sources */,
 				C429E9DA1C54B73C00BF81D9 /* PHPhotoLibrary.swift in Sources */,
-				C47AD6931C4FAB680071E215 /* NSURLSession.swift in Sources */,
+				C47AD6931C4FAB680071E215 /* URLSession.swift in Sources */,
 				C429E9F01C54BF7200BF81D9 /* ACAccountStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,11 +723,12 @@
 				INFOPLIST_FILE = "FutureProofing/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = nl.thomvis.FutureProofing;
 				PRODUCT_NAME = FutureProofing;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -696,11 +751,12 @@
 				INFOPLIST_FILE = "FutureProofing/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = nl.thomvis.FutureProofing;
 				PRODUCT_NAME = FutureProofing;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -709,11 +765,17 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = FutureProofing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -722,6 +784,8 @@
 				PRODUCT_NAME = FutureProofing;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -732,12 +796,18 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = FutureProofing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -746,6 +816,7 @@
 				PRODUCT_NAME = FutureProofing;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -755,11 +826,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = FutureProofing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -768,6 +845,8 @@
 				PRODUCT_NAME = FutureProofing;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -777,12 +856,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = FutureProofing/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -791,6 +876,7 @@
 				PRODUCT_NAME = FutureProofing;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -809,8 +895,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -820,6 +908,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -856,8 +945,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -866,6 +957,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -875,6 +967,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -886,6 +979,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -901,6 +995,7 @@
 				PRODUCT_NAME = FutureProofing;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -908,6 +1003,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -922,6 +1018,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FutureProofing;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -936,6 +1033,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -946,6 +1044,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

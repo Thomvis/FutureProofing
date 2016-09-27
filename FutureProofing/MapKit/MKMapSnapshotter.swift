@@ -10,8 +10,8 @@ import BrightFutures
 
 extension MKMapSnapshotter {
 
-    public func start() -> Future<MKMapSnapshot, BrightFuturesError<NSError>> {
-        return future {  self.startWithCompletionHandler($0)  }
+    open func start() -> Future<MKMapSnapshot, AnyError> {
+        return materialize {  self.start(completionHandler: $0)  }
     }
 
 }

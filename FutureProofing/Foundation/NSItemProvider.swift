@@ -13,12 +13,12 @@ import BrightFutures
 
 extension NSItemProvider {
 
-    public func loadItemForTypeIdentifier(typeIdentifier: String, options: [NSObject: AnyObject]? = nil) -> Future<NSSecureCoding, BrightFuturesError<NSError>> {
-        return future { self.loadItemForTypeIdentifier(typeIdentifier, options: options ?? [:], completionHandler: $0) }
+    open func loadItem(forTypeIdentifier typeIdentifier: String, options: [AnyHashable: Any]? = nil) -> Future<NSSecureCoding, AnyError> {
+        return materialize { self.loadItem(forTypeIdentifier: typeIdentifier, options: options ?? [:], completionHandler: $0) }
     }
     
-    public func loadPreviewImageWithOptions(options: [NSObject : AnyObject]? = nil) -> Future<NSSecureCoding, BrightFuturesError<NSError>> {
-        return future { self.loadPreviewImageWithOptions(options ?? [:], completionHandler: $0) }
+    open func loadPreviewImage(options: [AnyHashable: Any]? = nil) -> Future<NSSecureCoding, AnyError> {
+        return materialize { self.loadPreviewImage(options: options ?? [:], completionHandler: $0) }
     }
 
 }

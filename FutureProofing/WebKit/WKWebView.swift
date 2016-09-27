@@ -11,8 +11,8 @@ import BrightFutures
 
 extension WKWebView {
 
-    public func evaluateJavaScript(javaScriptString: String) -> Future<AnyObject, BrightFuturesError<NSError>>{
-        return future { self.evaluateJavaScript(javaScriptString, completionHandler: $0) }
+    open func evaluateJavaScript(_ javaScriptString: String) -> Future<Any, AnyError> {
+        return materialize { self.evaluateJavaScript(javaScriptString, completionHandler: $0) }
     }
 
 }
