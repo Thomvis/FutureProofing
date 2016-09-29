@@ -44,6 +44,14 @@ Pod::Spec.new do |s|
      ss.dependency 'FutureProofing/Core'
   end
 
+  s.subspec 'CoreData' do |ss|
+    ss.ios.source_files = 'FutureProofing/CoreData/*'
+    ss.osx.source_files = 'FutureProofing/CoreData/*'
+    ss.tvos.source_files = 'FutureProofing/CoreData/*'
+    ss.frameworks = 'CoreData'
+    ss.dependency 'FutureProofing/Core'
+  end
+
   s.subspec 'CoreLocation' do |ss|
     ss.ios.source_files = 'FutureProofing/CoreLocation/*'
     ss.osx.source_files = 'FutureProofing/CoreLocation/*'

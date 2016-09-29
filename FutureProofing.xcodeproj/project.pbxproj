@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C407D9DB1D9D3BA4003FADBA /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407D9DA1D9D3BA4003FADBA /* NSPersistentContainer.swift */; };
+		C407D9DC1D9D3BA4003FADBA /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407D9DA1D9D3BA4003FADBA /* NSPersistentContainer.swift */; };
+		C407D9DD1D9D3BA4003FADBA /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407D9DA1D9D3BA4003FADBA /* NSPersistentContainer.swift */; };
+		C407D9E31D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407D9E21D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift */; };
+		C407D9E41D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407D9E21D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift */; };
+		C407D9E51D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407D9E21D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift */; };
+		C407D9E71D9D3FED003FADBA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F69BAF1B933FD200713A91 /* Result.framework */; };
+		C407D9E81D9D406E003FADBA /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F69BAD1B933FCE00713A91 /* BrightFutures.framework */; };
 		C429E9DA1C54B73C00BF81D9 /* PHPhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9D91C54B73C00BF81D9 /* PHPhotoLibrary.swift */; };
 		C429E9DF1C54B85B00BF81D9 /* CKContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9DD1C54B85B00BF81D9 /* CKContainer.swift */; };
 		C429E9E01C54B85B00BF81D9 /* CKContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429E9DD1C54B85B00BF81D9 /* CKContainer.swift */; };
@@ -82,6 +90,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C407D9DA1D9D3BA4003FADBA /* NSPersistentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPersistentContainer.swift; sourceTree = "<group>"; };
+		C407D9E21D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSPersistentStoreCoordinator.swift; sourceTree = "<group>"; };
 		C429E9D91C54B73C00BF81D9 /* PHPhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHPhotoLibrary.swift; sourceTree = "<group>"; };
 		C429E9DD1C54B85B00BF81D9 /* CKContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKContainer.swift; sourceTree = "<group>"; };
 		C429E9DE1C54B85B00BF81D9 /* CKDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKDatabase.swift; sourceTree = "<group>"; };
@@ -163,6 +173,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C407D9E71D9D3FED003FADBA /* Result.framework in Frameworks */,
+				C407D9E81D9D406E003FADBA /* BrightFutures.framework in Frameworks */,
 				E9F189391A67942300F81E17 /* FutureProofing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +182,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C407D9D91D9D3B6C003FADBA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C407D9DA1D9D3BA4003FADBA /* NSPersistentContainer.swift */,
+				C407D9E21D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		C429E9D81C54B73C00BF81D9 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +362,7 @@
 				C429E9EE1C54BF7200BF81D9 /* Accounts */,
 				C429E9F61C54CAA300BF81D9 /* AVFoundation */,
 				C429E9DC1C54B85B00BF81D9 /* CloudKit */,
+				C407D9D91D9D3B6C003FADBA /* CoreData */,
 				C47AD6BB1C4FC0A10071E215 /* CoreLocation */,
 				C47AD6941C4FAB6C0071E215 /* Foundation */,
 				C429E9FD1C54D1D000BF81D9 /* HomeKit */,
@@ -563,10 +585,10 @@
 			projectRoot = "";
 			targets = (
 				E9F1892C1A67942300F81E17 /* FutureProofing-iOS */,
-				E9F189371A67942300F81E17 /* FutureProofingTests */,
 				C47AD69C1C4FACB90071E215 /* FutureProofing-Mac */,
 				E9E8F1FC1CD63AED00A65B40 /* FutureProofing-watchOS */,
 				E9E8F2091CD63AFE00A65B40 /* FutureProofing-tvOS */,
+				E9F189371A67942300F81E17 /* FutureProofingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -618,6 +640,8 @@
 				C47AD6AC1C4FAF670071E215 /* NotificationCenter.swift in Sources */,
 				C444228D1D99D7E5005AF80C /* CLGeocoder.swift in Sources */,
 				C47281071D38F9B1002775ED /* NSWindow.swift in Sources */,
+				C407D9E41D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift in Sources */,
+				C407D9DC1D9D3BA4003FADBA /* NSPersistentContainer.swift in Sources */,
 				C429E9F11C54BF7200BF81D9 /* ACAccountStore.swift in Sources */,
 				C47AD6CD1C4FD7910071E215 /* MKMapSnapshotter.swift in Sources */,
 				C47281011D38F257002775ED /* NSAnimationContext.swift in Sources */,
@@ -655,8 +679,10 @@
 				C44669411D99AC0C00ABE260 /* SKRequest.swift in Sources */,
 				C446693D1D99A17D00ABE260 /* UIView.swift in Sources */,
 				C446694B1D99AC8700ABE260 /* MKDirections.swift in Sources */,
+				C407D9DD1D9D3BA4003FADBA /* NSPersistentContainer.swift in Sources */,
 				C44669431D99AC3C00ABE260 /* NotificationCenter.swift in Sources */,
 				C44669461D99AC4E00ABE260 /* CKContainer.swift in Sources */,
+				C407D9E51D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift in Sources */,
 				C44669421D99AC3C00ABE260 /* URLSession.swift in Sources */,
 				C44669361D99847700ABE260 /* BrightFuture+FutureProofing.swift in Sources */,
 			);
@@ -673,12 +699,14 @@
 				C47AD6CC1C4FD7910071E215 /* MKMapSnapshotter.swift in Sources */,
 				C429E9F81C54CAA300BF81D9 /* AVAudioSession.swift in Sources */,
 				C47AD6961C4FAB780071E215 /* UIView.swift in Sources */,
+				C407D9DB1D9D3BA4003FADBA /* NSPersistentContainer.swift in Sources */,
 				C47AD6C51C4FD59C0071E215 /* NSItemProvider.swift in Sources */,
 				C429E9DF1C54B85B00BF81D9 /* CKContainer.swift in Sources */,
 				C429E9F41C54C83200BF81D9 /* WKWebView.swift in Sources */,
 				C47AD6C21C4FC2470071E215 /* SKRequest.swift in Sources */,
 				C429E9FF1C54D1E100BF81D9 /* HMHomeManager.swift in Sources */,
 				C429E9FB1C54CABA00BF81D9 /* AVCaptureDevice.swift in Sources */,
+				C407D9E31D9D3D38003FADBA /* NSPersistentStoreCoordinator.swift in Sources */,
 				C47AD6AB1C4FAF670071E215 /* NotificationCenter.swift in Sources */,
 				C429E9DA1C54B73C00BF81D9 /* PHPhotoLibrary.swift in Sources */,
 				C47AD6931C4FAB680071E215 /* URLSession.swift in Sources */,
@@ -1025,6 +1053,10 @@
 		E9F189471A67942300F81E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1040,6 +1072,10 @@
 		E9F189481A67942300F81E17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FutureProofingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.thomvis.$(PRODUCT_NAME:rfc1034identifier)";
