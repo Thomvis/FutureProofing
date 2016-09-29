@@ -36,14 +36,13 @@ Pod::Spec.new do |s|
     ss.dependency 'FutureProofing/Core'
   end
 
-  # s.subspec 'CloudKit' do |ss|
-  #   ss.source_files = 'FutureProofing/CloudKit/*'
-  #   ss.frameworks = 'CloudKit'
-
-  #   s.ios.deployment_target = '8.0'
-  #   s.osx.deployment_target = '10.10'
-  #   s.tvos.deployment_target = '9.0'
-  # end
+  s.subspec 'CloudKit' do |ss|
+     ss.ios.source_files = 'FutureProofing/CloudKit/*'
+     ss.osx.source_files = 'FutureProofing/CloudKit/*'
+     ss.tvos.source_files = 'FutureProofing/CloudKit/*'
+     ss.frameworks = 'CloudKit'
+     ss.dependency 'FutureProofing/Core'
+  end
 
   s.subspec 'CoreLocation' do |ss|
     ss.ios.source_files = 'FutureProofing/CoreLocation/*'
