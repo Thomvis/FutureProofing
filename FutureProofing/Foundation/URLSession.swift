@@ -10,8 +10,11 @@ import Foundation
 import BrightFutures
 
 extension URLSession {
+    public typealias FutureSessionDataTask = (URLSessionDataTask, Future<(Data?, URLResponse?), AnyError>)
+    public typealias FutureSessionUploadTask = (URLSessionUploadTask, Future<(Data?, URLResponse?), AnyError>)
+    public typealias FutureSessionDownloadTask = (URLSessionDownloadTask, Future<(URL?, URLResponse?), AnyError>)
     
-    open func dataTask(with request: URLRequest) -> (URLSessionDataTask, Future<(Data?, URLResponse?), AnyError>) {
+    open func dataTask(with request: URLRequest) -> FutureSessionDataTask {
         let p = Promise<(Data?, URLResponse?), AnyError>()
         
         let task = self.dataTask(with: request, completionHandler: self.completionHandler(promise: p))
@@ -19,7 +22,7 @@ extension URLSession {
         return (task, p.future)
     }
     
-    open func dataTask(with url: URL) -> (URLSessionDataTask, Future<(Data?, URLResponse?), AnyError>) {
+    open func dataTask(with url: URL) -> FutureSessionDataTask {
         let p = Promise<(Data?, URLResponse?), AnyError>()
         
         let task = self.dataTask(with: url, completionHandler: self.completionHandler(promise: p))
@@ -28,7 +31,7 @@ extension URLSession {
     }
     
     
-    open func uploadTask(with request: URLRequest, fromFile fileURL: URL) -> (URLSessionUploadTask, Future<(Data?, URLResponse?), AnyError>) {
+    open func uploadTask(with request: URLRequest, fromFile fileURL: URL) -> FutureSessionUploadTask {
         let p = Promise<(Data?, URLResponse?), AnyError>()
         
         let task = self.uploadTask(with: request, fromFile: fileURL as URL, completionHandler: self.completionHandler(promise: p))
@@ -37,7 +40,7 @@ extension URLSession {
     }
     
     
-    open func uploadTask(with request: URLRequest, from bodyData: Data?) -> (URLSessionUploadTask, Future<(Data?, URLResponse?), AnyError>) {
+    open func uploadTask(with request: URLRequest, from bodyData: Data?) -> FutureSessionUploadTask {
         let p = Promise<(Data?, URLResponse?), AnyError>()
         
         let task = self.uploadTask(with: request, from: bodyData, completionHandler: self.completionHandler(promise: p))
@@ -45,7 +48,7 @@ extension URLSession {
         return (task, p.future)
     }
     
-    open func downloadTask(with request: URLRequest) -> (URLSessionDownloadTask, Future<(URL?, URLResponse?), AnyError>) {
+    open func downloadTask(with request: URLRequest) -> FutureSessionDownloadTask {
         let p = Promise<(URL?, URLResponse?), AnyError>()
         
         let task = self.downloadTask(with: request, completionHandler: self.downloadTaskCompletionHandler(promise: p))
@@ -53,15 +56,15 @@ extension URLSession {
         return (task, p.future)
     }
     
-    open func downloadTask(with url: URL) -> (URLSessionDownloadTask, Future<(URL?, URLResponse?), AnyError>) {
+    open func downloadTask(with url: URL) -> FutureSessionDownloadTask {
         let p = Promise<(URL?, URLResponse?), AnyError>()
         
         let task = self.downloadTask(with:url, completionHandler: self.downloadTaskCompletionHandler(promise: p))
         
         return (task, p.future)
     }
-    
-    open func downloadTask(withResumeData resumeData: Data) -> (URLSessionDownloadTask, Future<(URL?, URLResponse?), AnyError>) {
+
+    open func downloadTask(withResumeData resumeData: Data) -> FutureSessionDownloadTask {
         let p = Promise<(URL?, URLResponse?), AnyError>()
         
         let task = self.downloadTask(withResumeData: resumeData, completionHandler: self.downloadTaskCompletionHandler(promise: p))

@@ -8,6 +8,8 @@
 
 import UIKit
 import XCTest
+import BrightFutures
+import FutureProofing
 
 class FutureProofingTests: XCTestCase {
     
@@ -22,15 +24,23 @@ class FutureProofingTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
+        let expectation = self.expectation(description: "task")
+        
+        let url = URL(string: "http://www.example.com")!
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let (task, f): URLSession.FutureSessionDataTask = session.dataTask(with: url)
+        task.resume()
+        f.onSuccess { (data, response) in
+            expectation.fulfill()
+        }
+        f.onFailure { error in
+            expectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 20) { error in
+             XCTFail("")
         }
     }
+
     
 }
