@@ -78,7 +78,7 @@ extension URLSession {
             if let error = error {
                 p.failure(AnyError(cause: error))
             } else {
-                p.success(data, response)
+                p.success((data, response))
             }
         }
     }
@@ -88,7 +88,7 @@ extension URLSession {
             if let error = error {
                 p.failure(AnyError(cause: error))
             } else {
-                p.success(url, response)
+                p.success((url, response))
             }
         }
     }

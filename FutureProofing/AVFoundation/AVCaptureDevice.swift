@@ -7,12 +7,11 @@
 //
 import AVFoundation
 import BrightFutures
-import Result
 
 extension AVCaptureDevice {
     
-    open class func requestAccess(forMediaType mediaType: String) -> Future<Bool, NoError> {
-        return  materialize { self.requestAccess(forMediaType: mediaType, completionHandler: $0) }
+    open class func requestAccess(for mediaType: AVMediaType) -> Future<Bool, Never> {
+        return  materialize { self.requestAccess(for: mediaType, completionHandler: $0) }
     }
     
 }

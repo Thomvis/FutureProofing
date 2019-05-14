@@ -10,11 +10,11 @@ import BrightFutures
 
 extension MKDirections {
 
-    open func calculate() -> Future<MKDirectionsResponse, AnyError> {
+    open func calculate() -> Future<MKDirections.Response, AnyError> {
         return materialize { self.calculate(completionHandler: $0) }
     }
 
-    open func calculateETA() -> Future<MKETAResponse, AnyError> {
+    open func calculateETA() -> Future<MKDirections.ETAResponse, AnyError> {
         return materialize { self.calculateETA(completionHandler:$0) }
     }
 

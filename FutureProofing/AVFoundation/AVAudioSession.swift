@@ -7,11 +7,10 @@
 //
 import AVFoundation
 import BrightFutures
-import Result
 
 extension AVAudioSession {
 
-    open func requestRecordPermission() -> Future<Bool, NoError> {
+    open func requestRecordPermission() -> Future<Bool, Never> {
         return materialize { self.requestRecordPermission($0) }
     }
 

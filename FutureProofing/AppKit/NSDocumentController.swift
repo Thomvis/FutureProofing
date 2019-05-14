@@ -8,15 +8,14 @@
 
 import AppKit
 import BrightFutures
-import Result
 
 extension NSDocumentController {
 
-    open func beginOpenPanel() -> Future<[URL]?, NoError> {
+    open func beginOpenPanel() -> Future<[URL]?, Never> {
         return materialize { self.beginOpenPanel(completionHandler: $0) }
     }
 
-    open func beginOpenPanel(openPanel: NSOpenPanel, forTypes inTypes: [String]?) -> Future<Int, NoError> {
+    open func beginOpenPanel(openPanel: NSOpenPanel, forTypes inTypes: [String]?) -> Future<Int, Never> {
         return materialize { self.beginOpenPanel(openPanel, forTypes: inTypes, completionHandler: $0) }
     }
 

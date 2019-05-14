@@ -8,7 +8,6 @@
 
 import Foundation
 import BrightFutures
-import Result
 
 // TODO move to BrightFutures if relevant?
 
@@ -21,10 +20,27 @@ public struct AnyError: Error {
     }
 }
 
-extension AnyError: ErrorProtocolConvertible {
-    
-    public static func error(from error: Swift.Error) -> AnyError {
-        return AnyError(cause: error)
+extension AnyError: CustomStringConvertible {
+    public var description: String {
+        return String(describing: cause)
+    }
+}
+
+extension AnyError: LocalizedError {
+    public var errorDescription: String? {
+        return cause.localizedDescription
+    }
+
+    public var failureReason: String? {
+        return (cause as? LocalizedError)?.failureReason
+    }
+
+    public var helpAnchor: String? {
+        return (cause as? LocalizedError)?.helpAnchor
+    }
+
+    public var recoverySuggestion: String? {
+        return (cause as? LocalizedError)?.recoverySuggestion
     }
 }
 
@@ -41,7 +57,7 @@ public func materialize<T>(_ scope: ( @escaping (T?, Error?) -> Void) -> Void) -
     }
 }
 
-public func materialize<T>(_ scope: ( @escaping (T) -> Void) -> Void) -> Future<T, NoError> {
+public func materialize<T>(_ scope: ( @escaping (T) -> Void) -> Void) -> Future<T, Never> {
     return Future { complete in
         scope { val in
             complete(.success(val))
@@ -55,7 +71,7 @@ public func materialize(_ scope: ( @escaping (Error?) -> Void) -> Void) -> Futur
             if let err = err {
                 complete(.failure(AnyError(cause: err)))
             } else {
-                complete(.success())
+                complete(.success(()))
             }
         }
     }

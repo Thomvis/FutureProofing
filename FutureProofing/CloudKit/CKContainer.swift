@@ -14,11 +14,11 @@ extension CKContainer {
         return materialize { self.accountStatus(completionHandler: $0) }
     }
 
-    public func requestApplicationPermission(_ applicationPermissions: CKApplicationPermissions) -> Future<CKApplicationPermissionStatus, AnyError> {
+    public func requestApplicationPermission(_ applicationPermissions: CKContainer.Application.Permissions) -> Future<CKContainer.Application.PermissionStatus, AnyError> {
         return materialize { self.requestApplicationPermission(applicationPermissions, completionHandler: $0) }
     }
 
-    public func status(forApplicationPermission applicationPermissions: CKApplicationPermissions) -> Future<CKApplicationPermissionStatus, AnyError> {
+    public func status(forApplicationPermission applicationPermissions: CKContainer.Application.Permissions) -> Future<CKContainer.Application.PermissionStatus, AnyError> {
         return materialize { self.status(forApplicationPermission: applicationPermissions, completionHandler: $0) }
     }
 
@@ -32,11 +32,11 @@ extension CKContainer {
         return materialize { self.discoverUserInfo(withEmailAddress: email, completionHandler: $0) }
     }
 
-    public func discoverUserInfo(withUserRecordID recordID: CKRecordID) -> Future<CKDiscoveredUserInfo, AnyError> {
+    public func discoverUserInfo(withUserRecordID recordID: CKRecord.ID) -> Future<CKDiscoveredUserInfo, AnyError> {
         return materialize { self.discoverUserInfo(withUserRecordID: recordID, completionHandler: $0) }
     }
 
-    public func fetchUserRecordID() -> Future<CKRecordID, AnyError> {
+    public func fetchUserRecordID() -> Future<CKRecord.ID, AnyError> {
         return materialize { self.fetchUserRecordID(completionHandler: $0) }
     }
 

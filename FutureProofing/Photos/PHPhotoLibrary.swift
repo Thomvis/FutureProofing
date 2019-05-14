@@ -7,11 +7,10 @@
 //
 import BrightFutures
 import Photos
-import Result
 
 extension PHPhotoLibrary {
 
-    open class func requestAuthorizadtionr() -> Future<PHAuthorizationStatus, NoError> {
+    open class func requestAuthorizadtionr() -> Future<PHAuthorizationStatus, Never> {
         return materialize { PHPhotoLibrary.requestAuthorization($0) }
     }
 

@@ -8,11 +8,10 @@
 
 import AppKit
 import BrightFutures
-import Result
 
 extension NSWindowRestoration {
 
-    public static func restoreWindow(withIdentifier identifier: String, state: NSCoder) -> Future<NSWindow?, AnyError> {
+    public static func restoreWindow(withIdentifier identifier: NSUserInterfaceItemIdentifier, state: NSCoder) -> Future<NSWindow?, AnyError> {
         return materialize { self.restoreWindow(withIdentifier: identifier, state: state, completionHandler: $0) }
     }
 
